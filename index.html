@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+</head>
+<body>
+  <form id="registration-form">
+    <label>Name: <input type="text" id="name" required /></label><br><br>
+    <label>Email: <input type="email" id="email" required /></label><br><br>
+    <label>Password: <input type="password" id="password" required /></label><br><br>
+    <label>DOB: <input type="date" id="dob" required /></label><br><br>
+    <label>
+      <input type="checkbox" id="acceptTerms" required />
+      Accept Terms and Conditions
+    </label><br><br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <h2>Stored Entries</h2>
+  <table border="1" id="user-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>Dob</th>
+        <th>Accepted terms?</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
